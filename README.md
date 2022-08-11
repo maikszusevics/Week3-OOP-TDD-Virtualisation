@@ -1,5 +1,6 @@
 # vagrant
 
+## This inside the vagrantfile will make a virtualmachine. Using init will do a lot more that we do not need yet.
 ```ruby
 #vagrant
 
