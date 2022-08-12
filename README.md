@@ -1,5 +1,12 @@
 # what is devenv and benefits
+Development environment is a set of tools for developing the source code of software. It normally utilises virtual machines in order to not break anything on the developers localhost and to make sure the software works on all machines despite hardware and operating system inconcistencies. It also helps improve collaboration between cross functional teams of the development process.
+
+![image](https://user-images.githubusercontent.com/110176257/184311163-1934ee36-368d-4025-96bf-4e43c2652bb4.png)
+
+
 ## vagrant and virtual box
+Vagrant is a solution for creating a Virtual Machine with minimalistic configuration and with extreme ease, which can be used across different Virtual machine environments. Vagrant automates the work of setting up development environments for your projects.
+
 ### virtualisation
 
 
