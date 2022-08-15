@@ -129,7 +129,48 @@ Benefits of DevEnv
 ### vagrant and virtual box
 Vagrant is a solution for creating a Virtual Machine with minimalistic configuration and with extreme ease, which can be used across different Virtual machine environments. Vagrant automates the work of setting up development environments for your projects.
 
+VirtualBox is open-source and industry standard software for virtualizing the x86 operating systems within an operating system.
+
 ### virtualisation
+
+Virtualisation creates a simulated computing environment within your operating system. Virtualisation utilises a specified fraction of your physical hardware resources to create a new environment with your choice of operating system. This allows partitions of a single physical computer or server into several machines. Each virtual machine can interact independently and run different systems and applications while sharing the resources of a single host machine.
+
+### Setting up virtual environment:
+
+The way we've been using virtualisation is utilising the vagrant and virtualbox tools to create an ubuntu based basic virtual machine.
+
+- Make a directory
+
+    - mkdir new_folder
+
+- Move in the directory
+
+    - cd new_folder
+
+- Create a Vagrant file nano Vagrantfile
+
+    - Paste the block of code and save it
+
+```ruby
+#vagrant
+
+Vagrant.configure("2") do |config|
+
+
+
+ config.vm.box = "ubuntu/xenial64" # Linux - ubuntu 16.04
+
+# creating a virtual machine ubuntu 
+
+
+
+ 
+
+
+
+
+end
+```
 
 
 - how can we find out the name of the OS `nuname` or `uname -a`
@@ -157,25 +198,3 @@ Vagrant is a solution for creating a Virtual Machine with minimalistic configura
 - automate update and upgrade
 - `cat filename` for check inside
 - 
-
-## This inside the vagrantfile will make a virtualmachine. Using init will do a lot more that we do not need yet.
-```ruby
-#vagrant
-
-Vagrant.configure("2") do |config|
-
-
-
- config.vm.box = "ubuntu/xenial64" # Linux - ubuntu 16.04
-
-# creating a virtual machine ubuntu 
-
-
-
- 
-
-
-
-
-end
-```
