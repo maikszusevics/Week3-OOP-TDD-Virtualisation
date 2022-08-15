@@ -115,26 +115,17 @@ Benefits of TDD
 
 
 
-## Development Evnironment
 
 
 
-The dev environment is a comprehensive set of tools for software development. The purpose is to have a place for developers to work 
-without worrying about writing code which only works on their localhost and takes time to share with the rest of the development team.
+## virtualisation
 
-Benefits of DevEnv
-- Streamlined workflows
-- Reduced chance of localhost differences breaking the software
-- Valuable infrastructure for integrating different parts of the development process
+Virtualisation creates a simulated computing environment within your operating system. Virtualisation utilises a specified fraction of your physical hardware resources to create a new environment with your choice of operating system. This allows partitions of a single physical computer or server into several machines. Each virtual machine can interact independently and run different systems and applications while sharing the resources of a single host machine.
 
 ### vagrant and virtual box
 Vagrant is a solution for creating a Virtual Machine with minimalistic configuration and with extreme ease, which can be used across different Virtual machine environments. Vagrant automates the work of setting up development environments for your projects.
 
 VirtualBox is open-source and industry standard software for virtualizing the x86 operating systems within an operating system.
-
-### virtualisation
-
-Virtualisation creates a simulated computing environment within your operating system. Virtualisation utilises a specified fraction of your physical hardware resources to create a new environment with your choice of operating system. This allows partitions of a single physical computer or server into several machines. Each virtual machine can interact independently and run different systems and applications while sharing the resources of a single host machine.
 
 ### Setting up virtual environment:
 
@@ -240,3 +231,16 @@ end
 ![image](https://user-images.githubusercontent.com/110176257/184607164-eb7e0ced-f94a-4a3b-9f61-c97738d3ebde.png)
 
 If the setup is correct, you should be able to connect to the IP you've set inside the vagrant file and see the image above
+
+
+## Development Evnironment
+
+
+
+The dev environment is a comprehensive set of tools for software development. The purpose is to have a place for developers to work 
+without worrying about writing code which only works on their localhost and takes time to share with the rest of the development team.
+
+Benefits of DevEnv
+- Streamlined workflows
+- Reduced chance of localhost differences breaking the software
+- Valuable infrastructure for integrating different parts of the development process
