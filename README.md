@@ -116,7 +116,7 @@ Benefits of TDD
 
 ## Development Evnironment
 
-![image](https://user-images.githubusercontent.com/110176257/184600589-78c80dcf-3286-4f95-9122-98d292bbb535.png)
+
 
 The dev environment is a comprehensive set of tools for software development. The purpose is to have a place for developers to work 
 without worrying about writing code which only works on their localhost and takes time to share with the rest of the development team.
@@ -137,7 +137,13 @@ Virtualisation creates a simulated computing environment within your operating s
 
 ### Setting up virtual environment:
 
+![image](https://user-images.githubusercontent.com/110176257/184600589-78c80dcf-3286-4f95-9122-98d292bbb535.png)
+
 The way we've been using virtualisation is utilising the vagrant and virtualbox tools to create an ubuntu based basic virtual machine.
+
+First steps are to install Ruby, Virtualbox, and Vagrant.
+
+Next we have to create a location and file for setting up vagrant, which will set up our virtualmachine using virtualbox:
 
 - Make a directory
 
@@ -202,3 +208,26 @@ end
 - how ro restart a process - in the case its an NGINX
 - restart or start `sudo systemctl restart nginx`
 - enable the process `sudo systemctl enable nginx`
+
+
+### Adding private network functionality to the VM:
+
+```ruby
+#vagrant
+
+Vagrant.configure("2") do |config|
+
+
+
+ config.vm.box = "ubuntu/xenial64" # Linux - ubuntu 16.04
+
+# creating a virtual machine ubuntu 
+config.vm.network "private_network", ip:"192.168.10.100"
+#once you added private network, need to reboot vm
+
+
+
+ 
+end
+```
+
