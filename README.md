@@ -210,6 +210,7 @@ end
 - restart or start `sudo systemctl restart nginx`
 - enable the process `sudo systemctl enable nginx`
 
+NGINX is open source software for web serving, which allows us to host an nginx welcome site on the private network.
 
 ### Adding private network functionality to the VM:
 
@@ -232,3 +233,6 @@ config.vm.network "private_network", ip:"192.168.10.100"
 end
 ```
 
+![image](https://user-images.githubusercontent.com/110176257/184607164-eb7e0ced-f94a-4a3b-9f61-c97738d3ebde.png)
+
+If the setup is correct, you should be able to connect to the IP you've set inside the vagrant file and see the image above
