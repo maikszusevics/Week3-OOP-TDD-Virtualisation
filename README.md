@@ -179,7 +179,8 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-
+## Common linux commands:
+``` markdown
 - how can we find out the name of the OS `nuname` or `uname -a`
 - how to create a file in liux `touch tfilename` or `nano filename`
 - how to check exitsting files/ folders `ls` `ls -a`
@@ -209,10 +210,13 @@ end
 - how ro restart a process - in the case its an NGINX
 - restart or start `sudo systemctl restart nginx`
 - enable the process `sudo systemctl enable nginx`
+```
 
 NGINX is open source software for web serving, which allows us to host an nginx welcome site on the private network.
 
 ### Adding private network functionality to the VM:
+
+Using vagrant and ruby we can very easily add this functionality to our VM, with just a single line of code.
 
 ```ruby
 #vagrant
