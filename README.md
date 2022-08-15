@@ -197,4 +197,8 @@ end
 - hopw to create automated tasks with provisioning spcripts
 - automate update and upgrade
 - `cat filename` for check inside
-- 
+- install nginx `sudo apt get install nginx -y`
+- how to check if its installed `sudo systemctl status nginx`
+- how ro restart a process - in the case its an NGINX
+- restart or start `sudo systemctl restart nginx`
+- enable the process `sudo systemctl enable nginx`
